@@ -8,7 +8,7 @@
 }
 body{/*todo dentro del body*/
   /*background: #7a809d;*/
-  background: url(../CSS/edihd2.jpg), #000;
+  background: url(../Imagenes/edihd2.jpg), #000;
   background-size: cover;/*para que se acomode a la pantalla*/
   background-repeat: no-repeat;
   background-attachment: fixed;/*esto es para que la imagen no se mueva*/

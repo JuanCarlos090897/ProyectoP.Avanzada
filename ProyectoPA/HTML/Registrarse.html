@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>Registrarse</title>
     <link rel="stylesheet" type="text/css"href="../CSS/Registrarse.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../BootstrapPA/css/bootstrap.min.css">
+
+
   </head>
   <body>
 
@@ -13,29 +17,32 @@
 
       <form id="formulario" action="" method="">
         <label for="N">Esciba su Nombre: </label>
-        <input type="text" placeholder="Nombre..." id="N">
+        <input class="form-control validate" type="text" placeholder="Nombre..." id="N" required>
 
         <label for="A">Esciba sus Apellidos: </label>
-        <input type="text" placeholder="Apellidos..." id="A">
+        <input class="form-control validate" type="text" placeholder="Apellidos..." id="A" required>
 
 
         <label for="C">Esciba su Cédula: </label>
-        <input type="number" placeholder="Cédula sin guiones..." id="C">
+        <input class="form-control validate" type="number" placeholder="Cédula sin guiones..." id="C" required>
 
         <label for="Co">Esciba su Correo personal: </label>
-        <input type="email" placeholder="Correo..." id="Co">
+        <input class="form-control validate" type="email" placeholder="Correo..." id="Co" required>
 
         <label for="Con1">Esciba una Contraseña para el campus: </label>
-        <input type="password" placeholder="Contraseña..." id="Con1">
+        <input class="form-control validate" type="password" placeholder="Contraseña..." id="Con1"  required>
 
         <label for="Con2">Repita contraseña: </label>
-        <input type="password" placeholder="Contraseña..." id="Con2">
+        <input class="form-control validate" type="password" placeholder="Contraseña..." id="Con2" required>
 
         <input type="submit" value="Registrarse">
 
       </form>
 
     </div>
-
+    <script src="../BootstrapPA/js/jquery.js"></script>
+    <script src="../BootstrapPA/js/bootstrap.min.js"></script>
+    <script src="../JavaScript/LibreriaJS/jQuery/dist/jquery.min.js"></script>
+    <script src="../JavaScript/Registrarse.js"></script>
   </body>
 </html>

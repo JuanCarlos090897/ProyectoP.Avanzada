@@ -1,0 +1,18 @@
+*{
+  font-family: sans-serif;
+}
+body{
+  background: url(../Imagenes/fondogris.jpg), #000;
+  background-size: cover;/*para que se acomode a la pantalla*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;/*esto es para que la imagen no se mueva*/
+
+}
+form input{
+  background-color: #987a71;
+  opacity: 0.8;/*para darle latransparencia*/
+}
+
+header h1{
+  margin-top: 0px;
+}

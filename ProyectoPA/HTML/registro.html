@@ -6,11 +6,12 @@
 
     <title>Registro</title>
     <link rel="stylesheet" type="text/css"href="../CSS/registro.css">
+
   </head>
   <body><!---->
     <header>
         <img src="../Imagenes/logoProyecto.jpg" id="logo" width="200px">
-        <input type="submit" value="Registrarse al Campus" id="btnregistrarse">
+        <input type="submit" value="Registrarse al Campus" id="btnregistrarse" src="#../HTML/Registrarse.html">
 
     </header>
     <form class="" action="" method=""> <!---esto es formulario---->
@@ -22,10 +23,27 @@
 
        <input type="submit" value="Entrar" id="btnenviar"><!--esto es un boton-->
 
-
-
-
     </form>
+
+  <script src="../JavaScript/LibreriaJS/jQuery/dist/jquery.min.js"></script>
+  <script src="../JavaScript/registro.js"></script>
+
+
+  <!-- ---------------------------------------esta es la parte de scrip debe exportarse despues a la pagina .js especifica ---------------------- -->
+
+  <!-- <script type="text/javascript">
+function check_text(input) {
+
+  form.addeventlis
+    if (input.validity.patternMismatch){
+        input.setCustomValidity("Debe ingresar al menos 3 caracteres");
+    }
+    else {
+        input.setCustomValidity("");
+    }
+}  </script> -->
+
+    <!-- ----------------------------------------------------------------------------------------- -->
 
   </body>
 </html>

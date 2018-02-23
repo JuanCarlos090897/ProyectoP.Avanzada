@@ -10,9 +10,3 @@ var div = document.getElementsByClassName('dropdown-menu');
    })
   }
   }
-
-  $(document).ready(function() {
-      $(".clickable-row").click(function() {
-          $("#myModal").modal();
-      });
-  });

@@ -19,7 +19,7 @@ form{
   opacity: 0.9;/*para darle latransparencia*/
   border-radius: 3%;
   padding: 2%;
-  margin-left: 25%;
+  /* margin-left: 25%; */
 }
 .row{
 margin: 6%;

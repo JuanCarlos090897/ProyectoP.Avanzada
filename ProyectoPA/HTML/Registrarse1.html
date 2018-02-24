@@ -7,16 +7,16 @@
     <link href="../CSS/Registrarse1.css" rel="stylesheet" />
     <link rel="stylesheet" href="../lib/FontAwesome/fontawesome/web-fonts-with-css/css/fontawesome.min.css" >
     <link rel="stylesheet" href="../lib/bootstrap-4.0.0/dist/css/bootstrap.min.css">
-     <script src="../lib/JQuery/jquery-3.3.1.min.js"></script>
+
 </head>
 <body>
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row" id="logo">
 
-    <div class="col-sm-4 col-xs-6"><img src="../Imagenes/logoProyecto.jpg"  ></div>
+    <div class="col-sm-4 col-xs-6"><img src="../Imagenes/logoProyecto.jpg"  width="35%" height="100%" ></div>
 
-    <div class="col-sm-1 col-sm-offset-7" >
+    <div class="col-sm-1 offset-sm-7" >
     <a href="../HTML/Registro1.html" target="_self"> <input type="submit" value="Regresar" class="btn btn-primary pull-right"> </a>
 
     </div>
@@ -25,58 +25,58 @@
   </div>
 
 
+      <div class="container">
+          <header class="text-center">
 
-    <div class="container">
-        <header class="text-center">
+              <h1>Registrar Usuario</h1>
+          </header>
+          <section>
 
-            <h1>Registrar Usuario</h1>
-        </header>
-        <section>
-            <div >
-                <form method="post" class="card-body">
-                    <div class="form-group">
+                  <form>
+                      <div class="form-group">
 
-                      <label>Esciba su Nombre: </label>
-                      <input class="form-control validatetext" type="text" placeholder="Nombre..." name="nombre" required  />
+                        <label>Esciba su Nombre: </label>
+                        <input class="form-control validatetext" type="text" placeholder="Nombre..." name="nombre" required  />
 
-                    </div>
-                    <div class="form-group">
+                      </div>
+                      <div class="form-group">
 
-                        <label>Esciba sus Apellidos: </label>
-                        <input class="form-control validatetext" type="text" placeholder="Apellidos..." name="apellidos" required/>
+                          <label>Esciba sus Apellidos: </label>
+                          <input class="form-control validatetext" type="text" placeholder="Apellidos..." name="apellidos" required/>
 
-                    </div>
-                    <div class="form-group">
+                      </div>
+                      <div class="form-group">
 
-                        <label>Esciba su Cédula: </label>
-                        <input class="form-control validatecedula" type="number" placeholder="Cédula sin guiones..." name="cedula" required />
+                          <label>Esciba su Cédula: </label>
+                          <input class="form-control validatecedula" type="number" placeholder="Cédula sin guiones..." name="cedula" required />
 
-                    </div>
+                      </div>
 
-                    <div class="form-group">
-                        <label>Escriba su correo personal:</label>
-                        <input class="form-control validate" type="email" placeholder="Correo..." name="email" required />
-                    </div>
+                      <div class="form-group">
+                          <label>Escriba su correo personal:</label>
+                          <input class="form-control validate" type="email" placeholder="Correo..." name="email" required />
+                      </div>
 
-                    <div class="form-group">
-                        <label>Escriba contraseña:</label>
-                        <input class="form-control validatecontrasena" type="password" placeholder="Contraseña..." name="contraseña1" required />
-                    </div>
+                      <div class="form-group">
+                          <label>Escriba contraseña:</label>
+                          <input class="form-control validatecontrasena" type="password" placeholder="Contraseña..." name="contraseña1" required />
+                      </div>
 
-                    <div class="form-group">
-                        <label>Repita contraseña:</label>
-                        <input class="form-control validatecontrasena" type="password" placeholder="Contraseña..." name="contraseña2" required />
-                    </div>
+                      <div class="form-group">
+                          <label>Repita contraseña:</label>
+                          <input class="form-control validatecontrasena" type="password" placeholder="Contraseña..." name="contraseña2" required />
+                      </div>
 
-                    <div>
-                        <input type="submit" class="btn btn-primary pull-right" />
-                    </div>
-                </form>
-            </div>
-        </section>
-    </div>
+                      <div>
+                          <input type="submit" class="btn btn-primary pull-right" />
+                      </div>
 
 
+          </section>
+      </div>
+
+
+   <script src="../lib/JQuery/jquery-3.3.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

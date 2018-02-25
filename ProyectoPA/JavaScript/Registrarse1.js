@@ -46,16 +46,20 @@
 
 
 // -----------------------------------------------------------------
+$(document).ready(function(){//para enviar al menu
+    $('.btnRegresar').click(function(){
+          window.location.href = "../HTML/Menu.html";
+    });
+});
+
 
 function validarcontrFuntion(){
   $('form').submit(function (event) {
-    if (document.contraseña1.value != document.contraseña2.value) {
+  if ($('.contraseña1').val() != $('.contraseña2').val()) {
       alert("Las contraseñas no coninciden");
       event.preventDefault(event);
         }
-
   });
-
 }
 
 

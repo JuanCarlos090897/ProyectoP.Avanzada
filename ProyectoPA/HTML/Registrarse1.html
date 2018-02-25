@@ -28,7 +28,7 @@
       <div class="container">
           <header class="text-center">
 
-              <h1>Registrar Usuario</h1>
+              <h2>Registrar Usuario</h2>
           </header>
           <section>
 
@@ -36,35 +36,35 @@
                       <div class="form-group">
 
                         <label>Esciba su Nombre: </label>
-                        <input class="form-control validatetext" type="text" placeholder="Nombre..." name="nombre" required  />
+                        <input class="form-control validatetext" type="text" placeholder="Nombre..."  required  />
 
                       </div>
                       <div class="form-group">
 
                           <label>Esciba sus Apellidos: </label>
-                          <input class="form-control validatetext" type="text" placeholder="Apellidos..." name="apellidos" required/>
+                          <input class="form-control validatetext" type="text" placeholder="Apellidos..."  required/>
 
                       </div>
                       <div class="form-group">
 
-                          <label>Esciba su Cédula: </label>
-                          <input class="form-control validatecedula" type="number" placeholder="Cédula sin guiones..." name="cedula" required />
+                          <label>Escriba su Cédula: </label>
+                          <input class="form-control validatecedula" type="text" onkeyup="this.value=Numeros(this.value)" placeholder="Cédula sin guiones..."  required />
 
                       </div>
 
                       <div class="form-group">
                           <label>Escriba su correo personal:</label>
-                          <input class="form-control validate" type="email" placeholder="Correo..." name="email" required />
+                          <input class="form-control validate" type="email" placeholder="Correo..."  required />
                       </div>
 
                       <div class="form-group">
                           <label>Escriba contraseña:</label>
-                          <input class="form-control validatecontrasena " type="password" placeholder="Contraseña..." name="contraseña1" id="password" required />
+                          <input class="form-control validatecontrasena1 " type="password" placeholder="Contraseña..."  required />
                       </div>
 
                       <div class="form-group">
                           <label>Repita contraseña:</label>
-                          <input class="form-control validatecontrasena validatecontrasena1" type="password" placeholder="Contraseña..." name="contraseña2"id="confirm_password" required />
+                          <input class="form-control validatecontrasena2 " type="password" placeholder="Contraseña..." required />
                       </div>
 
                       <div>

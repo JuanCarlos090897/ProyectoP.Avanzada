@@ -21,8 +21,14 @@
                 mensajecontrasenas += "\n"+label.substring(0, label.length - 1);
             }
         });
+        $('.validatecontrasena1').each(function () {
 
-        if (mensajetexto != "" || mensajecedula !="" || mensajecontrasenas !="") {
+          if ($('#password').val() != $('#confirm_password').val()) {
+          alert("no");
+            }
+        });
+
+        if (mensajetexto != "" || mensajecedula !="" || mensajecontrasenas !=""|| mensajecontrasenas1 !="") {
           var msjtexto="";
           var msjcedula="";
           var msjcontrasenas="";
@@ -36,8 +42,14 @@
           if (mensajecontrasenas != "") {
             msjcontrasenas="Los siguientes campos de contraseñas deben de tener mas de 7 characteres:\n"
           }
+          if (mensajecontrasenas != "") {
+            msjcontrasenas="Los siguientes campos de contraseñas deben de tener mas de 7 characteres:\n"
+          }  if (mensajecontrasenas1 != "") {
+              msjcontrasenas="La constresñas no coinciden\n"
+            }
 
-            alert(msjtexto+mensajetexto+"\n"+"\n"+msjcedula+mensajecedula+"\n"+"\n"+msjcontrasenas+mensajecontrasenas);
+
+            alert(msjtexto+mensajetexto+"\n"+"\n"+msjcedula+mensajecedula+"\n"+"\n"+msjcontrasenas+mensajecontrasenas+mensajecontrasenas);
             event.preventDefault(event);
         }
 
@@ -53,14 +65,8 @@ $(document).ready(function(){//para enviar al menu
 });
 
 
-function validarcontrFuntion(){
-  $('form').submit(function (event) {
-  if ($('.contraseña1').val() != $('.contraseña2').val()) {
-      alert("Las contraseñas no coninciden");
-      event.preventDefault(event);
-        }
-  });
-}
+
+
 
 
 

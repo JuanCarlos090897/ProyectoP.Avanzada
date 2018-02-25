@@ -1,0 +1,31 @@
+*{
+  font-family: sans-serif;
+
+}
+body{
+  background: url(../Imagenes/fondogris.jpg), #000;
+  background-size: cover;/*para que se acomode a la pantalla*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;/*esto es para que la imagen no se mueva*/
+
+}
+form input{
+  background-color: #987a71;
+  opacity: 0.8;/*para darle latransparencia*/
+}
+form{
+  border: 2px solid #8e8b8c  ;
+  background-color: #728093;
+  opacity: 0.9;/*para darle latransparencia*/
+  border-radius: 3%;
+  padding: 2%;
+  /* margin-left: 25%; */
+}
+.row{
+margin: 6%;
+
+}
+#logo{
+  margin: 0%;
+  padding: 1%;
+}

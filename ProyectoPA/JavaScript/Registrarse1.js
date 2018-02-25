@@ -47,6 +47,41 @@
 
 // -----------------------------------------------------------------
 
+function validarcontrFuntion(){
+  $('form').submit(function (event) {
+    if (document.contraseña1.value != document.contraseña2.value) {
+      alert("Las contraseñas no coninciden");
+      event.preventDefault(event);
+        }
+
+  });
+
+}
+
+
+
+
+
+
+// function ValidarContrasenas(){
+//   $('form').submit(function (event) {
+//     var $clave1 = document.contraseña1.value;
+//     var $clave2 = document.contraseña2.value;
+//     if ($clave1!=$clave2) {
+//       alert("Las contraseñas no coninciden");
+//       event.preventDefault(event);
+//     }
+//
+//   }
+//
+// }
+
+
+
+
+
+
+
 // (function comprobarcontrasenas(){
 //   $("form").submit(function(event){
 //     var $clave1 = document.contraseña1.value;

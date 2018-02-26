@@ -20,12 +20,13 @@ form{
   border-radius: 3%;
   padding: 2%;
   /* margin-left: 25%; */
+  /* margin: 15% 0%; */
 }
-.row{
-margin: 6%;
+.RowOptionMenu{
+   margin: 10% 0%;
+}
 
-}
-#logo{
+.logo{
   margin: 0%;
   padding: 1%;
 }

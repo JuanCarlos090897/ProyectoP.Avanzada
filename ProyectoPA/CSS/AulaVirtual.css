@@ -1,0 +1,21 @@
+*{
+  font-family: sans-serif;
+
+}
+body{
+  background: url(../Imagenes/fondogris.jpg), #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+table.centertable {
+    width:70%;
+    margin-left:15%;
+    margin-right:15%;
+  }
+  .center {
+    width:70%;
+    margin-left:15%;
+    margin-right:15%;
+    }

@@ -1,0 +1,17 @@
+*{
+  font-family: sans-serif;
+
+}
+body{
+  background: url(../Imagenes/fondogris.jpg), #000;
+  background-size: cover;/*para que se acomode a la pantalla*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;/*esto es para que la imagen no se mueva*/
+
+}
+.tablascontenedor{
+  padding-top: 50px;
+}
+.clasedebotonesennav input{
+  margin: 0px 5px;
+}

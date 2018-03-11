@@ -1,0 +1,24 @@
+*{
+  font-family: sans-serif;
+
+}
+body{
+  background: url(../Imagenes/fondogris.jpg), #000;
+  background-size: cover;/*para que se acomode a la pantalla*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;/*esto es para que la imagen no se mueva*/
+
+}
+.tablaAulas input{
+  border: 3px solid #8e8b8c  ;
+  background-color: #ffffff;
+  opacity: 0.7;/*para darle latransparencia*/
+  border-radius: 3%;
+  padding: 2%;
+}
+.tablaAulas{
+  margin: 3% 0%;
+}
+.clasedebotonesennav input{
+  margin: 0px 5px;
+}

@@ -36,17 +36,58 @@
        </form>
 
 	   <form class="col-sm-4 ">
-        <a href="../HTML/Asistencia(Estudiante).html"> <h4 class="form-group" style="text-align: center"><label for="MarcarHora"> <i class="fa fa-newspaper-o" style="font-size:36px"></i>MARCAR HORA</label></h4> </a>
+        <a href="#myModal" data-toggle="modal"> <h4 class="form-group" style="text-align: center"><label for="MarcarHora" > <i class="fa fa-newspaper-o" style="font-size:36px"></i>MARCAR HORA</label></h4> </a>
 
        </form>
 
 	   <form class="col-sm-5 ">
-       		<a href="../HTML/Perfil.html"><h4 class="form-group" style="text-align: center"><label for="MiPerfil" > <i class="fa fa-child" style="font-size:36px"></i> MI PERFIL</label></h4></a>
+       		<a href="../HTML/Perfil(Director).html"><h4 class="form-group" style="text-align: center"><label for="MiPerfil" > <i class="fa fa-child" style="font-size:36px"></i> MI PERFIL</label></h4></a>
        </form>
 
 
 
      </div>
+
+
+
+
+     <!-- The Modal -->
+     <div class="modal fade" id="myModal">
+       <div class="modal-dialog">
+         <div class="modal-content">
+
+           <!-- Modal Header -->
+           <div class="modal-header">
+             <h4 class="modal-title">Cambiar Contraseña</h4>
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+           </div>
+
+           <!-- Modal body -->
+           <div class="modal-body modalMarcarHora">
+
+            <div class="dropdown">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Selecionar Materia </button>
+                 <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Materia 1</a>
+                <a class="dropdown-item" href="#">Materia 2</a>
+                <a class="dropdown-item" href="#">Materia 3</a>
+                 </div>
+            </div>
+
+           </div>
+
+           <!-- Modal footer -->
+           <div class="modal-footer">
+             <input type="submit" name="" value="Marcar Hora" class="btn btn-success">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+           </div>
+
+         </div>
+       </div>
+     </div>
+
+
+
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

@@ -1,0 +1,17 @@
+*{
+  font-family: sans-serif;
+
+}
+body{
+  background: url(../Imagenes/fondogris.jpg), #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+.materiascontenedor{
+  margin: 10% 15%;
+}
+.form-group{
+  margin: 5% 0%;
+}

@@ -5,19 +5,19 @@
     <title>Matriculados</title>
     <link rel="stylesheet" href="../lib/FontAwesome/fontawesome/web-fonts-with-css/css/fontawesome.min.css" >
     <link rel="stylesheet" href="../lib/bootstrap-4.0.0/dist/css/bootstrap.min.css">
-    <link href="../CSS/AdministrarCursos.css" rel="stylesheet" />
+    <link href="../CSS/Matricula.css" rel="stylesheet" />
   </head>
   <body>
 
 
 
-
+	
 	Nombre de pagina "Editar estudiante": pagina ingresar carne de alumno (modal) y porcentaje de beca -> desplegar matricula con dropdown (en lugar de matricula)
-	con las opciones "desmatricular", "congelar", "matricular".
-
-	Martes 8:00 pm reunion PrograAvanzada
-
-
+	con las opciones "desmatricular", "congelar", "matricular". 
+	
+	Martes 8:00 pm reunion PrograAvanzada 
+	
+	
 	-> dropdown con todas las carreras
 
 
@@ -49,52 +49,42 @@
     </nav>
 
 
-<div class="container materiascontenedor">
+<div class="container tablascontenedor">
 
 
+                            <div class="row">
+                                <div class="col-md-12">
+                                  <table  class="table ">
+                          <thead>
+                           
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="text-center">01</td>
+                              <td class="text-center"><select>
+									  <option value="Matriculado">Arquitectura</option>
+									  <option value="Matriculado">Odontologia</option>
+									  <option value="Matriculado">Administracion de Empresas</option></td>
+                              <td class="text-center"><select>
+									  <option value="Matriculado">Mate</option>
+									  <option value="Matriculado">Ciencias</option>
+									  <option value="Matriculado">Etica</option></td>
+                              <td class="text-center">--</td>
+                              <td class="text-center">
+								  <select>
+									  <option value="Matriculado">Matriculado</option>
+									  <option value="Congelar">Congelar</option>
+									  <option value="Retirar">Retirar</option>
+									</select></td>
+							
 
-       <div class="row">
-
-        <form class="col-sm-6 offset-sm-3 col-xs-8">
-
-          <div class="form-group">
-            <div class="dropdown">
-    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Materias</button>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Arquitectura</a>
-      <a class="dropdown-item" href="#">Odontologia</a>
-      <a class="dropdown-item" href="#">Administracion de Empresas</a>
-    </div>
-  </div>
-
-             <div class="form-group">
-             <label>Nombre de la materia selecionada :</label>
-             <label for="NombreMateriaVieja">xxxxxxx</label>
-
-             </div>
-
-           <div class="form-group">
-           <label for="NombreMateriaNueva">Escriba el nombre nuevo :</label>
-           <input type="text" class="form-control"  placeholder="Nombre..." required>
-           </div>
-
-           <div class="form-group">
-
-          <button type="submit" class="btn btn-primary">Guardar Cambios</button>
-           </div>
-
-
-           </form>
-
-
-       </div>
-
-
-
-
-
-
-</div>
+                            </tr>
+                          
+                           
+                          </tbody>
+                        </table>
+                                </div>
+                            </div>
 </div>
 
 <script>

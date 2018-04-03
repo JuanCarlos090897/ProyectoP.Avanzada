@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Matricula</title>
+    <link rel="stylesheet" href="../lib/FontAwesome/fontawesome/web-fonts-with-css/css/fontawesome.min.css" >
+    <link rel="stylesheet" href="../lib/bootstrap-4.0.0/dist/css/bootstrap.min.css">
+    <link href="../CSS/Matricula.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark text-center text-uppercase">
+        <a class="navbar-brand" href="#">Modificacion Matricula</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center  clasedebotonesennav" id="navbar">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                  <a class="nav-link" href="../HTML/Matricula.html">Matricular</a>
+              </li>
+             
+            </ul>
+            
+              <a href="../HTML/Menu.html" target="_self" class="btn btn-primary " role="button">Regresar</a>
+        </div>
+    </nav>
+  </br>
+
+    
+        <div class="col-sm-2 float-right"><button type="button"  data-toggle="modal" data-target="#myModal">Continuar</button></div>
+  </div>
+
+
+
+
+
+<script type="text/javascript">
+  $(window).load(function(){        
+$('#myModal').modal('show');
+ }); 
+</script>
+
+
+
+
+   <!-- The Modal -->
+   <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+  
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Ingrese el numero de carnet del estudiante</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+  
+          <!-- Modal body -->
+          <div class="modal-body modalcontrasenas">
+            <div><input type="text" name="Carnet" value="" placeholder="Carnet..."></div></br>
+          </div>
+  
+          <!-- Modal footer -->
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" onclick="LoadDataBase();">Save changes</button>
+          </div>
+          <script>
+            function LoadDataBase(){
+                alert("Saved!!");
+
+            }
+          </script>
+  
+        </div>
+      </div>
+    </div>
+  
+<!-- ----------------------------------------------------Aqui va las tablas---------------------------------------------------------- - -->
+
+    <div class="container tablascontenedor">
+
+      
+            <!-- <div class="py-5 border"> -->
+
+                        <div class="row">
+                            <div class="col-md-12 ">
+                              <table  class="table ">
+                      <thead>
+                        <tr>
+                          <th class="text-center">Codigo</th>
+                          <th class="text-center">Materia</th>
+                          <th class="text-center">Creditos</th>
+                          <th class="text-center">Requisitos</th>
+                          <th class="text-center">Estado</th>
+                          <th class="text-center">Costo</th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">01</td>
+                          <td class="text-center">Materia01</td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+						  			<option value="Matriculado">Matriculado</option>
+                                    <option value="PuedeMatricular">Puede Matricular</option>
+                                    <option value="Matriculado">Matricular</option>
+                                    <option value="Congelar">Congelar Materia</option>
+                                    <option value="Retirar">Desmatricular</option>
+									<option value="Retirar">Reprobado</option>
+									<option value="Retirar">Aprovado</option>
+                                  </select></td>
+                          <td class="text-center">100000</td>                          
+
+                        </tr>
+                        <tr>
+                          <td class="text-center">02</td>
+                          <td class="text-center"><input type="text" placeholder="Materia02"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+                        <tr>
+                          <td class="text-center">03</td>
+                          <td class="text-center"><input type="text" placeholder="Materia03"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+                        <tr>
+                          <td class="text-center">04</td>
+                          <td class="text-center"><input type="text" placeholder="Materia04"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+                        <tr>
+                          <td class="text-center">05</td>
+                          <td class="text-center"><input type="text" placeholder="Materia05"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+
+                      </tbody>
+                    </table>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="col-md-12 ">
+                              <table  class="table ">
+                      <thead>
+                        <tr>
+                          <th class="text-center">Codigo</th>
+                          <th class="text-center">Materia</th>
+                          <th class="text-center">Creditos</th>
+                          <th class="text-center">Requisitos</th>
+                          <th class="text-center">Estado</th>
+                          <th class="text-center">Costo</th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">06</td>
+                          <td class="text-center"><input type="text" placeholder="Materia06"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+                        <tr>
+                          <td class="text-center">07</td>
+                          <td class="text-center"><input type="text" placeholder="Materia07"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+                        <tr>
+                          <td class="text-center">08</td>
+                          <td class="text-center"><input type="text" placeholder="Materia08"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+                        <tr>
+                          <td class="text-center">09</td>
+                          <td class="text-center"><input type="text" placeholder="Materia09"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+                        <tr>
+                          <td class="text-center">010</td>
+                          <td class="text-center"><input type="text" placeholder="Materia10"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+
+                      </tbody>
+                    </table>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-12 ">
+                              <table  class="table ">
+                      <thead>
+                        <tr>
+                          <th class="text-center">Codigo</th>
+                          <th class="text-center">Materia</th>
+                          <th class="text-center">Creditos</th>
+                          <th class="text-center">Requisitos</th>
+                          <th class="text-center">Estado</th>
+                          <th class="text-center">Costo</th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">011</td>
+                          <td class="text-center"><input type="text" placeholder="Materia11"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+                        <tr>
+                          <td class="text-center">012</td>
+                          <td class="text-center"><input type="text" placeholder="Materia12"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+                        <tr>
+                          <td class="text-center">013</td>
+                          <td class="text-center"><input type="text" placeholder="Materia13"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+                        <tr>
+                          <td class="text-center">014</td>
+                          <td class="text-center"><input type="text" placeholder="Materia14"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+                        <tr>
+                          <td class="text-center">015</td>
+                          <td class="text-center"><input type="text" placeholder="Materia15"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+
+                      </tbody>
+                    </table>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-12 ">
+                              <table  class="table ">
+                      <thead>
+                        <tr>
+                          <th class="text-center">Codigo</th>
+                          <th class="text-center">Materia</th>
+                          <th class="text-center">Creditos</th>
+                          <th class="text-center">Requisitos</th>
+                          <th class="text-center">Estado</th>
+                          <th class="text-center">Costo</th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">016</td>
+                          <td class="text-center"><input type="text" placeholder="Materia16"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+                        <tr>
+                          <td class="text-center">017</td>
+                          <td class="text-center"><input type="text" placeholder="Materia17"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+                        <tr>
+                          <td class="text-center">018</td>
+                          <td class="text-center"><input type="text" placeholder="Materia18"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+                        <tr>
+                          <td class="text-center">019</td>
+                          <td class="text-center"><input type="text" placeholder="Materia19"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+                        <tr>
+                          <td class="text-center">020</td>
+                          <td class="text-center"><input type="text" placeholder="Materia20"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+
+                      </tbody>
+                    </table>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-12 ">
+                              <table  class="table ">
+                      <thead>
+                        <tr>
+                          <th class="text-center">Codigo</th>
+                          <th class="text-center">Materia</th>
+                          <th class="text-center">Creditos</th>
+                          <th class="text-center">Requisitos</th>
+                          <th class="text-center">Estado</th>
+                          <th class="text-center">Costo</th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">021</td>
+                          <td class="text-center"><input type="text" placeholder="Materia21"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+                        <tr>
+                          <td class="text-center">022</td>
+                          <td class="text-center"><input type="text" placeholder="Materia22"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+                        <tr>
+                          <td class="text-center">023</td>
+                          <td class="text-center"><input type="text" placeholder="Materia23"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+                        <tr>
+                          <td class="text-center">024</td>
+                          <td class="text-center"><input type="text" placeholder="Materia24"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+                        <tr>
+                          <td class="text-center">025</td>
+                          <td class="text-center"><input type="text" placeholder="Materia25"></td>
+                          <td class="text-center">4</td>
+                          <td class="text-center">--</td>
+                          <td class="text-center"><select>
+                              <option value="Matriculado">Puede Matricular</option>
+                              <option value="Matriculado">Matricular</option>
+                              <option value="Congelar">Congelar Materia</option>
+                              <option value="Retirar">Desmatricular</option>
+                            </select></td>
+                          <td class="text-center">100000</td>
+
+                        </tr>
+
+                      </tbody>
+                    </table>
+                            </div>
+                        </div>
+
+
+
+                <!-- </div> -->
+
+    </div>
+
+
+    <script src="../lib/JQuery/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>

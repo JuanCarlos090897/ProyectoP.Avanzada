@@ -1,3 +1,0 @@
-Listar todas las materias (pagina aparte) 
-Dropdown or combobox con todas las materias, selecciona la materia y la modifica. 
-

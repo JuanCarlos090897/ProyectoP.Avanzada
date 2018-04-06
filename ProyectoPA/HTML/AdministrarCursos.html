@@ -7,27 +7,11 @@
     <link rel="stylesheet" href="../lib/bootstrap-4.0.0/dist/css/bootstrap.min.css">
     <link href="../CSS/AdministrarCursos.css" rel="stylesheet" />
   </head>
+
+
   <body>
-
-
-
-
-	Nombre de pagina "Editar estudiante": pagina ingresar carne de alumno (modal) y porcentaje de beca -> desplegar matricula con dropdown (en lugar de matricula)
-	con las opciones "desmatricular", "congelar", "matricular".
-
-	Martes 8:00 pm reunion PrograAvanzada
-
-
-	-> dropdown con todas las carreras
-
-
-
-
-
-
-
     <nav class="navbar navbar-expand-md bg-dark navbar-dark text-center text-uppercase">
-        <a class="navbar-brand" href="#">Administracion de Cursos</a>
+      <a class="navbar-brand" href="#">Administracion de Cursos</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,66 +25,147 @@
                   <a class="nav-link" href="../HTML/MateriasMatriculadas.html">Matriculados</a>
               </li>
             </ul>
-
-              <a href="../HTML/Menu.html" target="_self" class="btn btn-primary " role="button">Regresar</a>
-
-
+          <a href="../HTML/Menu.html" target="_self" class="btn btn-primary " role="button">Regresar</a>
         </div>
     </nav>
-
-
-<div class="container materiascontenedor">
-
-
-
-       <div class="row">
-
+  
+    
+    <div class="container materiascontenedor">
+      <div class="row">
         <form class="col-sm-6 offset-sm-3 col-xs-8">
-
           <div class="form-group">
-            <div class="dropdown">
-    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Materias</button>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Arquitectura</a>
-      <a class="dropdown-item" href="#">Odontologia</a>
-      <a class="dropdown-item" href="#">Administracion de Empresas</a>
+            
+              
+            
+           
+            <select  name="MateriaSeleccionada" onchange="jsFunction(this.value);" class="btn btn-primary dropdown-toggle">
+                <option value="" selected disabled hidden>Selecione una materia</option>
+                <option value="" disabled ></option>
+                <option value='FUNDAMENTOS DE ADMINISTRACIÓN'>FUNDAMENTOS DE ADMINISTRACIÓN</option>
+                <option value='LENGUA EXTRANJERA I'>LENGUA EXTRANJERA I</option>
+                <option value='MATEMÁTICAS UNIVERSITARIAS'>MATEMÁTICAS UNIVERSITARIAS</option>
+                <option value='OPTATIVA DE ESTUDIO GENERAL DE ARTES'>OPTATIVA DE ESTUDIO GENERAL DE ARTES</option>
+                <option value='OPTATIVA DE ESTUDIO GENERAL DE MATEMÁTICAS'>OPTATIVA DE ESTUDIO GENERAL DE MATEMÁTICAS</option>
+                <option value='ARGUMENTACIÓN ACADÉMICA'>ARGUMENTACIÓN ACADÉMICA</option>
+                <option value='CÁLCULO I'>CÁLCULO I</option>
+                <option value='COMUNICACIÓN EFECTIVA'>COMUNICACIÓN EFECTIVA</option>
+                <option value='CONTABILIDAD'>CONTABILIDAD</option>
+                <option value='EMPRESA Y ECONOMÍA'>EMPRESA Y ECONOMÍA</option>
+                <option value='FUNDAMENTOS DE MERCADOTECNIA'>FUNDAMENTOS DE MERCADOTECNIA</option>
+                <option value='LENGUA EXTRANJERA II'>LENGUA EXTRANJERA II</option>
+                <option value='CONTABILIDAD DE COSTOS I'>CONTABILIDAD DE COSTOS I</option>
+                <option value='CULTURA EMPRENDEDORA'>CULTURA EMPRENDEDORA</option>
+                <option value='DERECHO CORPORATIVO'>DERECHO CORPORATIVO</option>
+                <option value='ENTORNO MACROECONÓMICO'>ENTORNO MACROECONÓMICO</option>
+                <option value='ESCRITURA ACADÉMICA'>ESCRITURA ACADÉMICA</option>
+                <option value='ESTADÍSTICA PARA NEGOCIOS I'>ESTADÍSTICA PARA NEGOCIOS I</option>
+                <option value='LENGUA EXTRANJERA III'>LENGUA EXTRANJERA III</option>
+                <option value='ADMINISTRACIÓN FINANCIERA'>ADMINISTRACIÓN FINANCIERA</option>
+                <option value='APRENDIZAJE ORGANIZACIONAL Y CAMBIO'>APRENDIZAJE ORGANIZACIONAL Y CAMBIO</option>
+                <option value='COMPORTAMIENTO ORGANIZACIONAL'>COMPORTAMIENTO ORGANIZACIONAL</option>
+                <option value='CREACIÓN DE EMPRESAS'>CREACIÓN DE EMPRESAS</option>
+                <option value='ESTADÍSTICA PARA NEGOCIOS II'>ESTADÍSTICA PARA NEGOCIOS II</option>
+                <option value='TECNOLOGÍAS DE INFORMACIÓN EN LOS NEGOCIOS'>TECNOLOGÍAS DE INFORMACIÓN EN LOS NEGOCIOS</option>
+                <option value='ALGORITMOS Y ANÁLISIS DE DATOS'>ALGORITMOS Y ANÁLISIS DE DATOS</option>
+                <option value='GESTIÓN DEL TALENTO HUMANO'>GESTIÓN DEL TALENTO HUMANO</option>
+                <option value='INVESTIGACIÓN DE MERCADOS'>INVESTIGACIÓN DE MERCADOS</option>
+                <option value='OPTATIVA DE ESTUDIO GENERAL DE CIENCIAS NATURALES'>OPTATIVA DE ESTUDIO GENERAL DE CIENCIAS NATURALES</option>
+                <option value='OPTATIVA DE ESTUDIO GENERAL DE HUMANIDADES'>OPTATIVA DE ESTUDIO GENERAL DE HUMANIDADES</option>
+                <option value='PRÁCTICAS EN LA PROFESIÓN 1'>PRÁCTICAS EN LA PROFESIÓN 1</option>
+                <option value='DISEÑO ORGANIZACIONAL'>DISEÑO ORGANIZACIONAL</option>
+                <option value='GESTIÓN DE LA INNOVACIÓN'>GESTIÓN DE LA INNOVACIÓN</option>
+                <option value='LIDERAZGO EN LAS ORGANIZACIONES'>LIDERAZGO EN LAS ORGANIZACIONES</option>
+                <option value='MODELOS DE DECISIONES'>MODELOS DE DECISIONES</option>
+                <option value='NEGOCIOS ELECTRÓNICOS'>NEGOCIOS ELECTRÓNICOS</option>
+                <option value='TEMAS SELECTOS 1'>TEMAS SELECTOS 1</option>
+                <option value='ADMINISTRACIÓN DE OPERACIONES'>ADMINISTRACIÓN DE OPERACIONES</option>
+                <option value='ADMINISTRACIÓN DE PROYECTOS'>ADMINISTRACIÓN DE PROYECTOS</option>
+                <option value='ADMINISTRACIÓN ESTRATÉGICA'>ADMINISTRACIÓN ESTRATÉGICA</option>
+                <option value='ÉTICA Y RESPONSABILIDAD SOCIAL CORPORATIVA'>ÉTICA Y RESPONSABILIDAD SOCIAL CORPORATIVA</option>
+                <option value='PRÁCTICAS EN LA PROFESIÓN 2'>PRÁCTICAS EN LA PROFESIÓN 2</option>
+            </select>
+
+            <div class="form-group">
+              <label>Nombre de la materia selecionada :</label>
+              <label for="NombreMateriaVieja">xxxxxxx</label>
+            </div>
+
+
+            <div class="form-group">
+              <label >Escriba el nombre nuevo :</label>
+              <input name="NombreMateriaNueva" type="text" class="form-control"  placeholder="Nombre..." required>
+            </div>
+
+
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary" onclick="SaveChanges();">Guardar Cambios</button>
+            </div>
+
+
+          </div> 
+        </form>
+      </div>
     </div>
   </div>
 
-             <div class="form-group">
-             <label>Nombre de la materia selecionada :</label>
-             <label for="NombreMateriaVieja">xxxxxxx</label>
+  <script type="text/javascript">
+    function jsFunction(value){
+      $("label[for = NombreMateriaVieja]").text(value);  
+    }
 
-             </div>
-
-           <div class="form-group">
-           <label for="NombreMateriaNueva">Escriba el nombre nuevo :</label>
-           <input type="text" class="form-control"  placeholder="Nombre..." required>
-           </div>
-
-           <div class="form-group">
-
-          <button type="submit" class="btn btn-primary">Guardar Cambios</button>
-           </div>
-
-
-           </form>
-
-
-       </div>
+    function SaveChanges(){
+      if($("label[for = NombreMateriaVieja]").text() == "xxxxxxx"){ $("#myModal").modal(); }
+        else{
+          if($("input[name=NombreMateriaNueva]").val() == ""){ alert("Debe confirmar el nuevo nombre de la materia."); }
+            else{
+              alert("DataBase Update from "+ $("label[for = NombreMateriaVieja]").text() + " to " + 
+              $("input[name=NombreMateriaNueva]").val()  );
+            }      
+        }      
+    }
+    setTimeout(function() { $('#myModal').modal('hide'); }, 4000);
+  </script>
+    
 
 
 
+    <!-- Modal Seleccionar Materia-->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p><font size="6" bold=true color="red">Campo requerido</font></p>
+              <p>Debe seleccionar una materia</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>      
+        </div>
+      </div>
 
-
-
-</div>
-</div>
-
-<script>
-	function OnChange(){}
-</script>
-
+      <!-- Modal Ingresar Nombre de Materia valido-->
+      <div id="myModal2" class="modal fade" role="dialog">
+          <div class="modal-dialog">      
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <p><font size="6" bold=true color="red">Campo requerido</font></p>
+                <p>Debe ingresar un nombre valido para la materia seleccionada</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>      
+          </div>
+        </div>
 
     <script src="../lib/JQuery/jquery-3.3.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
